@@ -1,24 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="coming-soon">
+      <h1 className="text-7xl font-extralight">
+        grace <span className="font-bold">d.</span> is
+      </h1>
+      <p className="right-0 text-lg leading-none hover:leading-loose font-extralight">coming soon 2022</p>
     </div>
   );
 }
