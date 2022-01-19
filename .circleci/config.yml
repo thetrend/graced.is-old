@@ -32,4 +32,4 @@ jobs:
 
       - store_artifacts:
           path: ./build
-      - run: ./node_modules/.bin/netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN --prod --dir=build --message "$GIT_COMMIT_DESC"
+      - run: netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN --prod --dir=build --message "$GIT_COMMIT_DESC"
