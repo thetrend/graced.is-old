@@ -2,17 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply font-extralight;
+  @apply text-lg;
+}
+
 #root {
-  align-items: center;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  min-height: 100vh;
+  @apply
+    flex-col
+    flex-nowrap
+    m-auto
+    min-h-screen
+    min-w-full
+  ;
+}
+
+#root > #coming-soon-container {
+  @apply
+    flex
+    max-h-fit
+    max-w-fit
+    mx-auto
+    self-end
+  ;
 }
 
 #coming-soon {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-end;
-  max-width: fit-content;
+  @apply
+    flex
+    items-end
+    flex-col
+    flex-nowrap
+  ;
+  margin-top: 40vh;
 }
