@@ -36,3 +36,26 @@ body {
   ;
   margin-top: 40vh;
 }
+
+#blog-container {
+  @apply
+    flex
+    flex-col
+    flex-nowrap
+    mx-auto
+    mt-28
+    w-9/12
+}
+
+.content-container {
+  @apply
+    flex
+    flex-grow
+    flex-col
+    flex-nowrap
+}
+
+.post-container {
+  @apply
+    mb-5
+}
